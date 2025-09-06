@@ -31,7 +31,7 @@ let topPipeImg;
 let bottomPipeImg;
 
 //physics
-let velocityX = -2; //pipes moving left speed
+let velocityX = -4; //pipes moving left speed
 let velocityY = 0; //bird jump speed
 let gravity = 0.1;
 
@@ -63,7 +63,7 @@ window.onload = function() {
     bottomPipeImg.src = "./bottompipe.png";
 
     requestAnimationFrame(update);
-    setInterval(placePipes, 750); // a cada 1.5segundos
+    setInterval(placePipes, 1500); // a cada 1.5segundos
     document.addEventListener("keydown", moveBird);
 
 }
